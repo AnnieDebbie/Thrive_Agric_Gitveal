@@ -18,7 +18,7 @@ const RepositoryItem = (props) => {
             <div className="list-group-item list-group-item-action" aria-current="true">
                     <div>
                               <a href={html_url}>
-                                          <h5 class="mb-1">{name}</h5>
+                                          <h5 className="mb-1">{name}</h5>
                                                     </a>
                                                               <div className="d-flex w-100 justify-content-between">
                                                                           <span className="badge bg-primary rounded-pill"> {props.private ? "private" : "public"}</span>
