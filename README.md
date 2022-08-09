@@ -14,4 +14,5 @@ You may also see any lint errors in the console.
 
 ### Deployment
 This project is live on https://thrive-agric-gitveal.netlify.app/
-
+### Using the App
+All you have to do is input a valid github username and click on Submit.
