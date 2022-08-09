@@ -4,7 +4,7 @@ import { ReactComponent as SpinnerSvg } from "../../src/icons/real_spinner.svg";
 function Spinner() {
   return (
     <div>
-      <SpinnerSvg className="spinner-size-control"/>
+      <SpinnerSvg className="spinner-size-control show"/>
     </div>
   );
 }
