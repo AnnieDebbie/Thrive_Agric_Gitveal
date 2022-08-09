@@ -26,7 +26,7 @@ const RepositoryItem = (props) => {
                   </div>
         <p className="mb-1">{description}</p>
                 <div className  ="d-flex w-100">
-                        <small> { formatDate(updated_at, en-US)}</small>
+                        <small> { formatDate(updated_at, "en-US")}</small>
                                 <small> {language}</small>
                                         </div>
                                               </div>
