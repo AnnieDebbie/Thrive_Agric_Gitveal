@@ -1,8 +1,10 @@
 const RepositoryItem = (props) => {
   const { name, fork, updated_at, description, html_url, language } = props;
-  const formatDate = function (date, locale) {
-    function calcDaysPassed(date1, date2) {
-        Math.round((date2 - date1) / (1000 * 60 * 60 * 24));
+  
+const formatDate = function (date, locale) {
+ date = new Date(date)
+   function calcDaysPassed(date1, date2) {
+        return Math.round((date1 - date2) / (1000 * 60 * 60 * 24));
           }
   const daysPassed = calcDaysPassed(new Date(), date);
   if (daysPassed === 0) return 'Today';
@@ -26,7 +28,7 @@ const RepositoryItem = (props) => {
                   </div>
         <p className="mb-1">{description}</p>
                 <div className  ="d-flex w-100">
-                        <small> { formatDate({updated_at}, "en-US")}</small>
+                        <small> { formatDate(updated_at, "en-US")}</small>
                                 <small> {language}</small>
                                         </div>
                                               </div>
