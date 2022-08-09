@@ -20,10 +20,12 @@ const SearchInput = () =>{
       });
   }
   return (
+<div className="mt-4 plr-3"> 
     <form onSubmit={onFormSubmit}>
-      <input className="form-control" onChange={onInputChange} value={query} type="text" />
-      <input className="success" type="submit" />
+      <input placeholder="Search User...." onChange={onInputChange} value={query} type="text" />
+      <input className="btn btn-success" type="submit" />
     </form>
+</div>
   );
 }
 
