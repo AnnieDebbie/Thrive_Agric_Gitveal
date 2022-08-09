@@ -1,10 +1,10 @@
-// import "./SplashScreen.css";
+import "./Spinner.css";
 import { ReactComponent as SpinnerSvg } from "../../src/icons/real_spinner.svg";
 
 function Spinner() {
   return (
     <div>
-      <SpinnerSvg />
+      <SpinnerSvg className="spinner-size-control"/>
     </div>
   );
 }
