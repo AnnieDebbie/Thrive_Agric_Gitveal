@@ -1,0 +1,10 @@
+.spinner-size-control { 
+font-size: 32px;
+}
+
+.show {
+animation: show-fam-logo 3s ease-in 1 alternate;}
+@keyframes show-fam-logo { 
+0% { opacity: 0; }  
+30% {  opacity: 0; } 
+100% { opacity: 1; }}
