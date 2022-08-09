@@ -18,16 +18,15 @@ const formatDate = function (date, locale) {
   return (
       <div className="list-group">
             <div className="list-group-item list-group-item-action" aria-current="true">
-                    <div>
-                              <a href={html_url}>
+                    <div className="d-flex w-100 justify-content-between">
+                              <a href={html_url} className="link-dark">
                                           <h5 className="mb-1">{name}</h5>
-                                                    </a>
-                                                              <div className="d-flex w-100 justify-content-between">
+                                                  </a>
                                                                           <span className="badge bg-success rounded-pill"> {props.private ? "private" : "public"}</span>
-          </div>
+          
                   </div>
         <p className="mb-1">{description}</p>
-                <div className  ="d-flex w-100">
+                <div className  ="d-flex w-100 justify-content-between">
                         <small> { formatDate(updated_at, "en-US")}</small>
                                 <small> {language}</small>
                                         </div>
