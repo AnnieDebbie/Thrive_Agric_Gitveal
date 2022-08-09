@@ -21,7 +21,7 @@ const RepositoryItem = (props) => {
                                           <h5 className="mb-1">{name}</h5>
                                                     </a>
                                                               <div className="d-flex w-100 justify-content-between">
-                                                                          <span className="badge bg-primary rounded-pill"> {props.private ? "private" : "public"}</span>
+                                                                          <span className="badge bg-success rounded-pill"> {props.private ? "private" : "public"}</span>
           </div>
                   </div>
         <p className="mb-1">{description}</p>
