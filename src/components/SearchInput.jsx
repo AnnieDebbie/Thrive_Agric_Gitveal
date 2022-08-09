@@ -1,7 +1,7 @@
 import { useContext, useRef } from "react";
 import repositoryContext from "../store/RepositoryContext";
 
-function SearchInput() {
+const SearchInput = () =>{
   const { query, setQuery, setRepositories, setIsLoading } =
     useContext(repositoryContext);
   function onInputChange(e) {
@@ -21,8 +21,8 @@ function SearchInput() {
   }
   return (
     <form onSubmit={onFormSubmit}>
-      <input onChange={onInputChange} value={query} type="text" />
-      <input type="submit" />
+      <input className="form-control" onChange={onInputChange} value={query} type="text" />
+      <input className="success" type="submit" />
     </form>
   );
 }
