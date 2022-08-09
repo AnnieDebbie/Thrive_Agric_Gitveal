@@ -16,14 +16,13 @@ const SearchInput = () =>{
       .then((resObject) => {
         setRepositories(resObject ?? []);
         setIsLoading(false);
-        console.log(resObject);
       });
   }
   return (
-<div className="mt-4 plr-3"> 
+<div className="mt-4 mb-2 plr-3"> 
     <form onSubmit={onFormSubmit}>
       <input placeholder="Search User...." onChange={onInputChange} value={query} type="text" />
-      <input className="btn btn-success" type="submit" />
+      <input className="btn btn-success input-sm" type="submit" />
     </form>
 </div>
   );
